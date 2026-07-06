@@ -10,7 +10,7 @@ genai.configure(api_key=api_key)
 
 st.set_page_config(page_title="Cover Letter Bot", page_icon="✉️")
 
-st.title("✉️ Cover Letter & Cold Email Tailor Bot")
+st.title("Cover Letter & Cold Email Tailor Bot")
 st.write("Paste a job description and I'll help you draft a tailored cover letter or cold email.")
 
 job_description = st.text_area(
