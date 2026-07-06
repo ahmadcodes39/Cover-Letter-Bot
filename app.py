@@ -4,7 +4,9 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
+
+api_key = os.getenv("GEMINI_API_KEY") or st.secrets.get("GEMINI_API_KEY")
+genai.configure(api_key=api_key)
 
 st.set_page_config(page_title="Cover Letter Bot", page_icon="✉️")
 
